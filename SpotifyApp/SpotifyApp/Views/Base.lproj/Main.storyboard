@@ -151,6 +151,7 @@
                                 <state key="normal" title="LOG IN"/>
                                 <connections>
                                     <action selector="logInBtnTapped:" destination="9gM-hO-neL" eventType="touchUpInside" id="iis-SM-v15"/>
+                                    <segue destination="qUL-2c-dgD" kind="show" identifier="usersSegue" id="2iR-ql-4CG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5C-v6-DFf">
@@ -219,6 +220,41 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiJ-FL-VuJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1482.608695652174" y="107.8125"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="gac-ir-wx1">
+            <objects>
+                <viewController id="CEZ-h0-Iyi" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="EAb-40-Uzi">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="Oh6-xf-hZT"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="Lch-cS-PjI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XGf-x0-TN2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3334.7826086956525" y="112.5"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="02d-wj-kaQ">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="qUL-2c-dgD" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="hKS-2Z-GIN"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="uXf-9i-YJm">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="CEZ-h0-Iyi" kind="relationship" relationship="rootViewController" id="Di5-Ln-Tq4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="44k-R9-qri" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2424.6376811594205" y="112.5"/>
         </scene>
     </scenes>
     <resources>

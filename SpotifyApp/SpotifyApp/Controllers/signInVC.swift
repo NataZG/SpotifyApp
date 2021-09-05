@@ -23,8 +23,6 @@ class signInVC: UIViewController {
         super.viewDidLoad()
         self.view.backgroundColor = UIColor(patternImage: (UIImage(named: "theWeekend"))!)
         setUpUI()
-        emailTF.text = ""
-        passwordTF.text = ""
         
         ref = Database.database().reference(withPath: "users")
 
@@ -33,6 +31,11 @@ class signInVC: UIViewController {
             guard let _ = user else { return }
             self?.performSegue(withIdentifier: Constants.Segues.users, sender: nil)
         }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        emailTF.text = ""
+        passwordTF.text = ""
     }
     
 
