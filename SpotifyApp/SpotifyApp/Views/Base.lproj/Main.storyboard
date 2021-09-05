@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="HyA-5B-3v5">
     <device id="retina6_1" orientation="portrait" appearance="dark"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
@@ -8,35 +8,83 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--WelcomeVC-->
         <scene sceneID="DiH-J3-Zh3">
             <objects>
-                <viewController id="xFY-lU-bJ6" sceneMemberID="viewController">
+                <viewController id="xFY-lU-bJ6" customClass="welcomeVC" customModule="SpotifyApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="atf-0g-UoK">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAW-Vf-ib3">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kAW-Vf-ib3">
                                 <rect key="frame" x="54" y="536" width="306" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.11372549019607843" green="0.72549019607843135" blue="0.32941176470588235" alpha="0.84705882352941175" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="SIGN UP"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUU-nq-bPi">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUU-nq-bPi">
                                 <rect key="frame" x="54" y="672" width="306" height="56"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="0.1137254902" green="0.72549019609999998" blue="0.3294117647" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="backgroundColor" red="0.098039215686274508" green="0.078431372549019607" blue="0.078431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="20"/>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <state key="normal" title="LOG IN"/>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R8z-mW-mjP">
+                                <rect key="frame" x="59" y="88" width="335" height="316"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Millions of songs. Free on Spotify" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nZ6-Pf-7aA">
+                                <rect key="frame" x="82" y="276" width="245" height="33"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="15"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ohc-b4-W82">
+                                <rect key="frame" x="135" y="622" width="146" height="30"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Create a new account">
+                                            <attributes>
+                                                <color key="NSColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <font key="NSFont" size="15" name="Helvetica"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                <integer key="NSUnderline" value="1"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="sYl-lf-QjH"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="R8z-mW-mjP" firstAttribute="top" secondItem="sYl-lf-QjH" secondAttribute="top" id="8cw-er-W7w"/>
+                            <constraint firstItem="kAW-Vf-ib3" firstAttribute="top" secondItem="sYl-lf-QjH" secondAttribute="top" constant="448" id="8zQ-uH-aTM"/>
+                            <constraint firstItem="nZ6-Pf-7aA" firstAttribute="leading" secondItem="sYl-lf-QjH" secondAttribute="leading" constant="82" id="AWo-kl-Tui"/>
+                            <constraint firstItem="kAW-Vf-ib3" firstAttribute="leading" secondItem="sYl-lf-QjH" secondAttribute="leading" constant="54" id="DOC-jd-cTt"/>
+                            <constraint firstItem="sYl-lf-QjH" firstAttribute="bottom" secondItem="R8z-mW-mjP" secondAttribute="bottom" constant="458" id="ESh-Oc-6Fe"/>
+                            <constraint firstItem="eUU-nq-bPi" firstAttribute="height" secondItem="kAW-Vf-ib3" secondAttribute="height" id="F1k-1V-fXY"/>
+                            <constraint firstItem="eUU-nq-bPi" firstAttribute="top" secondItem="ohc-b4-W82" secondAttribute="bottom" constant="20" id="KCv-SX-k0a"/>
+                            <constraint firstItem="sYl-lf-QjH" firstAttribute="trailing" secondItem="R8z-mW-mjP" secondAttribute="trailing" constant="20" id="L2B-T9-kmn"/>
+                            <constraint firstItem="sYl-lf-QjH" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="eUU-nq-bPi" secondAttribute="trailing" symbolic="YES" id="MHR-Yl-yVc"/>
+                            <constraint firstItem="sYl-lf-QjH" firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="nZ6-Pf-7aA" secondAttribute="trailing" symbolic="YES" id="Mht-s9-IiF"/>
+                            <constraint firstItem="nZ6-Pf-7aA" firstAttribute="width" secondItem="R8z-mW-mjP" secondAttribute="height" multiplier="245:316" id="QjD-Kg-tNW"/>
+                            <constraint firstItem="sYl-lf-QjH" firstAttribute="trailing" secondItem="ohc-b4-W82" secondAttribute="trailing" constant="133" id="SA1-hz-Kc8"/>
+                            <constraint firstItem="eUU-nq-bPi" firstAttribute="leading" secondItem="kAW-Vf-ib3" secondAttribute="leading" id="TUz-lA-ePt"/>
+                            <constraint firstItem="sYl-lf-QjH" firstAttribute="trailing" secondItem="kAW-Vf-ib3" secondAttribute="trailing" constant="54" id="WSV-CU-M0z"/>
+                            <constraint firstItem="sYl-lf-QjH" firstAttribute="bottom" secondItem="eUU-nq-bPi" secondAttribute="bottom" constant="134" id="axB-xr-C8g"/>
+                            <constraint firstItem="R8z-mW-mjP" firstAttribute="leading" secondItem="sYl-lf-QjH" secondAttribute="leading" constant="59" id="lww-uA-7Kg"/>
+                            <constraint firstItem="nZ6-Pf-7aA" firstAttribute="top" secondItem="sYl-lf-QjH" secondAttribute="top" constant="188" id="p93-R1-6ll"/>
+                            <constraint firstItem="ohc-b4-W82" firstAttribute="leading" secondItem="sYl-lf-QjH" secondAttribute="leading" constant="135" id="qtD-dW-qIc"/>
+                            <constraint firstItem="eUU-nq-bPi" firstAttribute="width" secondItem="kAW-Vf-ib3" secondAttribute="width" id="wrL-lU-j23"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="777-ff-c6C"/>
+                    <connections>
+                        <outlet property="logInBtn" destination="eUU-nq-bPi" id="2mX-Va-kJv"/>
+                        <outlet property="logo" destination="R8z-mW-mjP" id="DF9-uM-DIs"/>
+                        <outlet property="signUpBtn" destination="kAW-Vf-ib3" id="ulX-pq-KkH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wtR-R8-OC0" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
