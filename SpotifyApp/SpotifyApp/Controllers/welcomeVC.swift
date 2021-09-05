@@ -20,20 +20,15 @@ class welcomeVC: UIViewController {
         setUpUI()
     }
     
+    // MARK: - Navigation
+
+    @IBAction func logInBtnTapped(_ sender: UIButton) {
+        performSegue(withIdentifier: "goToSignIn", sender: nil)
+    }
+    
     private func setUpUI() {
         signUpBtn.layer.cornerRadius = 25.0
         logInBtn.layer.cornerRadius = 25.0
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
-    }
-    */
 
 }
