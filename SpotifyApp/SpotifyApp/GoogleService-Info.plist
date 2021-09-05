@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>643549257048-3ptsvcq4hc25nm5jkg6h263vcof8s127.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.643549257048-3ptsvcq4hc25nm5jkg6h263vcof8s127</string>
+	<key>API_KEY</key>
+	<string>AIzaSyC6d6ZPyUsAlGX_Krunedj6Rswm_7bRcbM</string>
+	<key>GCM_SENDER_ID</key>
+	<string>643549257048</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>by.I21-iOS.SpotifyApp</string>
+	<key>PROJECT_ID</key>
+	<string>spotifyapp-fd140</string>
+	<key>STORAGE_BUCKET</key>
+	<string>spotifyapp-fd140.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:643549257048:ios:7ab31d1ec0db28ffd3992d</string>
+</dict>
+</plist>

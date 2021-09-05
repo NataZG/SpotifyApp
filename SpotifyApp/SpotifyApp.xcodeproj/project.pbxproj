@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -14,6 +14,11 @@
 		41DD3A4D26E4AF5600C781BF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 41DD3A4B26E4AF5600C781BF /* LaunchScreen.storyboard */; };
 		41DD3A5A26E4B5A700C781BF /* welcomeVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD3A5926E4B5A700C781BF /* welcomeVC.swift */; };
 		41DD3A5C26E4CA0600C781BF /* signInVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD3A5B26E4CA0600C781BF /* signInVC.swift */; };
+		41DD3A5F26E4D9B900C781BF /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 41DD3A5E26E4D9B900C781BF /* FirebaseAnalytics */; };
+		41DD3A6126E4D9B900C781BF /* FirebaseCrashlytics in Frameworks */ = {isa = PBXBuildFile; productRef = 41DD3A6026E4D9B900C781BF /* FirebaseCrashlytics */; };
+		41DD3A6326E4D9B900C781BF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 41DD3A6226E4D9B900C781BF /* FirebaseAuth */; };
+		41DD3A6526E4D9B900C781BF /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 41DD3A6426E4D9B900C781BF /* FirebaseDatabase */; };
+		41DD3A6726E4DD9B00C781BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41DD3A6626E4DD9A00C781BF /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +31,7 @@
 		41DD3A4E26E4AF5600C781BF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		41DD3A5926E4B5A700C781BF /* welcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeVC.swift; sourceTree = "<group>"; };
 		41DD3A5B26E4CA0600C781BF /* signInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInVC.swift; sourceTree = "<group>"; };
+		41DD3A6626E4DD9A00C781BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +39,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41DD3A5F26E4D9B900C781BF /* FirebaseAnalytics in Frameworks */,
+				41DD3A6326E4D9B900C781BF /* FirebaseAuth in Frameworks */,
+				41DD3A6526E4D9B900C781BF /* FirebaseDatabase in Frameworks */,
+				41DD3A6126E4D9B900C781BF /* FirebaseCrashlytics in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +73,7 @@
 				41DD3A5626E4B09B00C781BF /* Models */,
 				41DD3A5526E4B09600C781BF /* Views */,
 				41DD3A5426E4B09000C781BF /* Controllers */,
+				41DD3A6626E4DD9A00C781BF /* GoogleService-Info.plist */,
 				41DD3A4E26E4AF5600C781BF /* Info.plist */,
 			);
 			path = SpotifyApp;
@@ -120,12 +131,19 @@
 				41DD3A3926E4AF5000C781BF /* Sources */,
 				41DD3A3A26E4AF5000C781BF /* Frameworks */,
 				41DD3A3B26E4AF5000C781BF /* Resources */,
+				41DD3A6826E4E42100C781BF /* ShellScript */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = SpotifyApp;
+			packageProductDependencies = (
+				41DD3A5E26E4D9B900C781BF /* FirebaseAnalytics */,
+				41DD3A6026E4D9B900C781BF /* FirebaseCrashlytics */,
+				41DD3A6226E4D9B900C781BF /* FirebaseAuth */,
+				41DD3A6426E4D9B900C781BF /* FirebaseDatabase */,
+			);
 			productName = SpotifyApp;
 			productReference = 41DD3A3D26E4AF5000C781BF /* SpotifyApp.app */;
 			productType = "com.apple.product-type.application";
@@ -153,6 +171,9 @@
 				Base,
 			);
 			mainGroup = 41DD3A3426E4AF5000C781BF;
+			packageReferences = (
+				41DD3A5D26E4D9B900C781BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
 			productRefGroup = 41DD3A3E26E4AF5000C781BF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -168,12 +189,35 @@
 			buildActionMask = 2147483647;
 			files = (
 				41DD3A4D26E4AF5600C781BF /* LaunchScreen.storyboard in Resources */,
+				41DD3A6726E4DD9B00C781BF /* GoogleService-Info.plist in Resources */,
 				41DD3A4A26E4AF5600C781BF /* Assets.xcassets in Resources */,
 				41DD3A4826E4AF5000C781BF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		41DD3A6826E4E42100C781BF /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 8;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${DWARF_DSYM_FOLDER_PATH}/${DWARF_DSYM_FILE_NAME}/Contents/Resources/DWARF/${TARGET_NAME}",
+				"$(SRCROOT)/$(BUILT_PRODUCTS_DIR)/$(INFOPLIST_PATH)",
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/FirebaseCrashlytics/run\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		41DD3A3926E4AF5000C781BF /* Sources */ = {
@@ -331,6 +375,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = 5JPN6876WV;
 				INFOPLIST_FILE = SpotifyApp/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -385,6 +430,40 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		41DD3A5D26E4D9B900C781BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.6.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		41DD3A5E26E4D9B900C781BF /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41DD3A5D26E4D9B900C781BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		41DD3A6026E4D9B900C781BF /* FirebaseCrashlytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41DD3A5D26E4D9B900C781BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseCrashlytics;
+		};
+		41DD3A6226E4D9B900C781BF /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41DD3A5D26E4D9B900C781BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		41DD3A6426E4D9B900C781BF /* FirebaseDatabase */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 41DD3A5D26E4D9B900C781BF /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseDatabase;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 41DD3A3526E4AF5000C781BF /* Project object */;
 }
