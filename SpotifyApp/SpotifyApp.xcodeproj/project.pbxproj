@@ -19,6 +19,8 @@
 		41DD3A6326E4D9B900C781BF /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 41DD3A6226E4D9B900C781BF /* FirebaseAuth */; };
 		41DD3A6526E4D9B900C781BF /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 41DD3A6426E4D9B900C781BF /* FirebaseDatabase */; };
 		41DD3A6726E4DD9B00C781BF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 41DD3A6626E4DD9A00C781BF /* GoogleService-Info.plist */; };
+		41DD3A6B26E4F7B300C781BF /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD3A6A26E4F7B300C781BF /* Constants.swift */; };
+		41DD3A6D26E4F96500C781BF /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD3A6C26E4F96500C781BF /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		41DD3A5926E4B5A700C781BF /* welcomeVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = welcomeVC.swift; sourceTree = "<group>"; };
 		41DD3A5B26E4CA0600C781BF /* signInVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = signInVC.swift; sourceTree = "<group>"; };
 		41DD3A6626E4DD9A00C781BF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		41DD3A6A26E4F7B300C781BF /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		41DD3A6C26E4F96500C781BF /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,7 @@
 		41DD3A3F26E4AF5000C781BF /* SpotifyApp */ = {
 			isa = PBXGroup;
 			children = (
+				41DD3A6926E4F76500C781BF /* Constants */,
 				41DD3A5826E4B0A800C781BF /* Resources */,
 				41DD3A5726E4B0A300C781BF /* Managers */,
 				41DD3A5626E4B09B00C781BF /* Models */,
@@ -100,6 +105,7 @@
 		41DD3A5626E4B09B00C781BF /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				41DD3A6C26E4F96500C781BF /* User.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -119,6 +125,14 @@
 				41DD3A4926E4AF5600C781BF /* Assets.xcassets */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		41DD3A6926E4F76500C781BF /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				41DD3A6A26E4F7B300C781BF /* Constants.swift */,
+			);
+			path = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -224,7 +238,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41DD3A6B26E4F7B300C781BF /* Constants.swift in Sources */,
 				41DD3A5A26E4B5A700C781BF /* welcomeVC.swift in Sources */,
+				41DD3A6D26E4F96500C781BF /* User.swift in Sources */,
 				41DD3A4126E4AF5000C781BF /* AppDelegate.swift in Sources */,
 				41DD3A5C26E4CA0600C781BF /* signInVC.swift in Sources */,
 				41DD3A4326E4AF5000C781BF /* SceneDelegate.swift in Sources */,
