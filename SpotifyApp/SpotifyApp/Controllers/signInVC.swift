@@ -29,7 +29,7 @@ class signInVC: UIViewController {
         // если у нас еще есть действующий user то сделаем переход
         Auth.auth().addStateDidChangeListener { [weak self] _, user in
             guard let _ = user else { return }
-            self?.performSegue(withIdentifier: Constants.Segues.users, sender: nil)
+           // self?.performSegue(withIdentifier: Constants.Segues.users, sender: nil)
         }
     }
     

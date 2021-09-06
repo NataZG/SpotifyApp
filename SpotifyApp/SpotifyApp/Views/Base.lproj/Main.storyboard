@@ -151,7 +151,6 @@
                                 <state key="normal" title="LOG IN"/>
                                 <connections>
                                     <action selector="logInBtnTapped:" destination="9gM-hO-neL" eventType="touchUpInside" id="iis-SM-v15"/>
-                                    <segue destination="qUL-2c-dgD" kind="show" identifier="usersSegue" id="2iR-ql-4CG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D5C-v6-DFf">
@@ -215,6 +214,7 @@
                         <outlet property="passwordTF" destination="KNn-C8-6TT" id="5eR-PE-UQL"/>
                         <outlet property="registerBtn" destination="D5C-v6-DFf" id="Mbp-L2-jke"/>
                         <outlet property="warningLbl" destination="2wG-Dr-KUa" id="g2L-TD-kMK"/>
+                        <segue destination="qUL-2c-dgD" kind="presentation" identifier="usersSegue" modalPresentationStyle="fullScreen" id="auc-tS-Gky"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qiJ-FL-VuJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -226,7 +226,7 @@
             <objects>
                 <viewController id="CEZ-h0-Iyi" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="EAb-40-Uzi">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="Oh6-xf-hZT"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -244,7 +244,7 @@
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="hKS-2Z-GIN"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="uXf-9i-YJm">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="56"/>
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
