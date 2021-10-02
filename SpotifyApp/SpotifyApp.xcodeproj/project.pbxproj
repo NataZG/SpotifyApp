@@ -24,9 +24,9 @@
 		41DD3A6F2708419400C781BF /* SpotifyiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DD3A6E2708419300C781BF /* SpotifyiOS.framework */; };
 		41DD3A72270842D600C781BF /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 41DD3A71270842D600C781BF /* AVFoundation.framework */; };
 		41DD3A7627084C8C00C781BF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD3A7527084C8C00C781BF /* ContentView.swift */; };
-		41DD3A98270855B100C781BF /* MusicSearchVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD3A97270855B100C781BF /* MusicSearchVC.swift */; };
 		41DD3A9A270892D000C781BF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD3A99270892CE00C781BF /* DataModel.swift */; };
 		41DD3A9C2708988A00C781BF /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD3A9B2708988A00C781BF /* SongListViewModel.swift */; };
+		41DD3A9E27089C0500C781BF /* MusicSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD3A9D27089C0500C781BF /* MusicSearchApp.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +45,9 @@
 		41DD3A6E2708419300C781BF /* SpotifyiOS.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = SpotifyiOS.framework; sourceTree = "<group>"; };
 		41DD3A71270842D600C781BF /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		41DD3A7527084C8C00C781BF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		41DD3A97270855B100C781BF /* MusicSearchVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSearchVC.swift; sourceTree = "<group>"; };
 		41DD3A99270892CE00C781BF /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		41DD3A9B2708988A00C781BF /* SongListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModel.swift; sourceTree = "<group>"; };
+		41DD3A9D27089C0500C781BF /* MusicSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSearchApp.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,7 +106,6 @@
 				41DD3A5926E4B5A700C781BF /* welcomeVC.swift */,
 				41DD3A5B26E4CA0600C781BF /* signInVC.swift */,
 				41DD3A7527084C8C00C781BF /* ContentView.swift */,
-				41DD3A97270855B100C781BF /* MusicSearchVC.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -126,6 +125,7 @@
 				41DD3A6C26E4F96500C781BF /* User.swift */,
 				41DD3A99270892CE00C781BF /* DataModel.swift */,
 				41DD3A9B2708988A00C781BF /* SongListViewModel.swift */,
+				41DD3A9D27089C0500C781BF /* MusicSearchApp.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -271,8 +271,8 @@
 				41DD3A7627084C8C00C781BF /* ContentView.swift in Sources */,
 				41DD3A6D26E4F96500C781BF /* User.swift in Sources */,
 				41DD3A4126E4AF5000C781BF /* AppDelegate.swift in Sources */,
+				41DD3A9E27089C0500C781BF /* MusicSearchApp.swift in Sources */,
 				41DD3A5C26E4CA0600C781BF /* signInVC.swift in Sources */,
-				41DD3A98270855B100C781BF /* MusicSearchVC.swift in Sources */,
 				41DD3A9C2708988A00C781BF /* SongListViewModel.swift in Sources */,
 				41DD3A4326E4AF5000C781BF /* SceneDelegate.swift in Sources */,
 				41DD3A9A270892D000C781BF /* DataModel.swift in Sources */,

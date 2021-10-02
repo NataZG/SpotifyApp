@@ -36,7 +36,7 @@ class signInVC: UIViewController {
     
     @IBSegueAction func swiftUIAction(_ coder: NSCoder) -> UIViewController? {
         
-        return UIHostingController(coder: coder, rootView: ContentView())
+        return UIHostingController(coder: coder, rootView: ContentView(viewModel: SongListViewModel()))
     }
     
     override func viewWillAppear(_ animated: Bool) {
