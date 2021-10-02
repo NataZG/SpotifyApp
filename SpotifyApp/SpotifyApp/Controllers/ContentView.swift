@@ -11,6 +11,7 @@ struct ContentView: View {
     var body: some View {
         NavigationView {
             VStack {
+            SearchBar()
               EmptyStateView()
             }
             .navigationBarTitle("Music Search")
@@ -30,7 +31,29 @@ struct EmptyStateView: View {
             Spacer()
         }
         .padding()
-        .foregroundColor(Color(.systemIndigo))
+        .foregroundColor(Color(.systemGreen))
+    }
+}
+
+struct SearchBar: UIViewRepresentable {
+    typealias UIViewType = UISearchBar
+    
+    func makeUIView(context: Context) -> UISearchBar {
+        let searchBar = UISearchBar(frame: .zero)
+        searchBar.delegate = context.coordinator
+        searchBar.searchBarStyle = .minimal
+        searchBar.placeholder = "Type a song, artist, or album name..."
+        return searchBar
+    }
+    
+    func updateUIView(_ uiView: UISearchBar, context: Context) {
+    }
+    
+    func makeCoordinator() -> SearchBarCoordinator {
+        return SearchBarCoordinator()
+    }
+    class SearchBarCoordinator: NSObject, UISearchBarDelegate {
+        
     }
 }
 
