@@ -36,7 +36,7 @@ struct SongView: View {
         HStack {
             ArtworkView(image: song.artwork)
                 .padding(.trailing)
-            VStack {
+            VStack(alignment: .leading) {
                 Text(song.trackName)
                 Text(song.artistName)
                     .font(.footnote)

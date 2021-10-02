@@ -14,6 +14,7 @@ class SongListViewModel: ObservableObject {
     @Published public private(set) var songs: [SongViewModel] = []
     
     private let dataModel: DataModel = DataModel()
+    private let artworkLoader: ArtworkLoader = ArtworkLoader()
     private var disposables = Set<AnyCancellable>()
     
     init() {
@@ -24,6 +25,7 @@ class SongListViewModel: ObservableObject {
     
     private func loadSongs(searchTerm: String) {
         songs.removeAll()
+        artworkLoader.reset()
         
         dataModel.loadSongs(searchTerm: searchTerm) { songs in
             songs.forEach {self.appendSong(song: $0)}
@@ -34,6 +36,11 @@ class SongListViewModel: ObservableObject {
         let songViewModel = SongViewModel(song: song)
         DispatchQueue.main.async {
             self.songs.append(songViewModel)
+        }
+        artworkLoader.loadArtwork(forSong: song) { image in
+            DispatchQueue.main.async {
+                songViewModel.artwork = image
+            }
         }
     }
 }

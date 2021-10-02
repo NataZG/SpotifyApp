@@ -27,6 +27,7 @@
 		41DD3A9A270892D000C781BF /* DataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD3A99270892CE00C781BF /* DataModel.swift */; };
 		41DD3A9C2708988A00C781BF /* SongListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD3A9B2708988A00C781BF /* SongListViewModel.swift */; };
 		41DD3A9E27089C0500C781BF /* MusicSearchApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD3A9D27089C0500C781BF /* MusicSearchApp.swift */; };
+		41DD3AA02708A41000C781BF /* ArtworkLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41DD3A9F2708A41000C781BF /* ArtworkLoader.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 		41DD3A99270892CE00C781BF /* DataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataModel.swift; sourceTree = "<group>"; };
 		41DD3A9B2708988A00C781BF /* SongListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongListViewModel.swift; sourceTree = "<group>"; };
 		41DD3A9D27089C0500C781BF /* MusicSearchApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicSearchApp.swift; sourceTree = "<group>"; };
+		41DD3A9F2708A41000C781BF /* ArtworkLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtworkLoader.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -126,6 +128,7 @@
 				41DD3A99270892CE00C781BF /* DataModel.swift */,
 				41DD3A9B2708988A00C781BF /* SongListViewModel.swift */,
 				41DD3A9D27089C0500C781BF /* MusicSearchApp.swift */,
+				41DD3A9F2708A41000C781BF /* ArtworkLoader.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -266,6 +269,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				41DD3AA02708A41000C781BF /* ArtworkLoader.swift in Sources */,
 				41DD3A6B26E4F7B300C781BF /* Constants.swift in Sources */,
 				41DD3A5A26E4B5A700C781BF /* welcomeVC.swift in Sources */,
 				41DD3A7627084C8C00C781BF /* ContentView.swift in Sources */,
