@@ -7,6 +7,7 @@
 
 import UIKit
 import Firebase
+import SwiftUI
 
 class signInVC: UIViewController {
     
@@ -31,6 +32,11 @@ class signInVC: UIViewController {
             guard let _ = user else { return }
            // self?.performSegue(withIdentifier: Constants.Segues.users, sender: nil)
         }
+    }
+    
+    @IBSegueAction func swiftUIAction(_ coder: NSCoder) -> UIViewController? {
+        
+        return UIHostingController(coder: coder, rootView: ContentView())
     }
     
     override func viewWillAppear(_ animated: Bool) {
