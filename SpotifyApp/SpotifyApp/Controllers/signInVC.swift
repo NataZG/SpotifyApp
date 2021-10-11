@@ -56,7 +56,7 @@ class signInVC: UIViewController {
         // логинемся
         Auth.auth().signIn(withEmail: email, password: password) { [weak self] user, error in
             if let _ = error {
-                self?.displayWarningLabel(withText: "Error ocured")
+                self?.displayWarningLabel(withText: "Error occurred")
             } else if let _ = user {
                 // переходим на новый экран
                 self?.performSegue(withIdentifier: Constants.Segues.users, sender: nil)
